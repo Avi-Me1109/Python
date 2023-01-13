@@ -1,9 +1,27 @@
-print("Welcome to Adding Calculator")
-num1 = int(input("Enter First Number : "))
-num2 = int(input("Enter Second Number: "))
+print("Welcome to Calculator")
 
+Operation = input("Enter your operation symbol: ")
+num1 = int(input("Enter your first number: "))
+num2 = int(input("Enter your second number: "))
+num3 = 0
 
-print("Answer is ", num1 + num2)
+if Operation == '+':
+    num3 = num1 + num2
+    print("Answer = ", num3)
 
-print("Is num1 greater than num2: ", num1 > num2)
-print("Is num2 greater than num1: ", num2 > num1)
+elif Operation == '-':
+    num3 = num1 - num2
+    print("Answer = ", num3)
+
+elif Operation == 'x':
+    num3 = num1 * num2
+    print("Answer = ", num3)
+
+elif Operation == '/':
+    num3 = num1 / num2
+    print("Answer = ", num3)
+
+else:
+    print("No valid Operation")
+
+exit()
