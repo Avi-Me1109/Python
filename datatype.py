@@ -1,3 +1,5 @@
+import random
+
 #int
 num1 = 5
 print(num1)
@@ -15,6 +17,9 @@ cars = ["Audi", "BMW", "Mercedes"]
 print(cars[0])
 print(cars[1])
 print(cars[2])
+
+numbers = [1,2,3,4,5,6,7,8,9,10]
+print("Number is ", random.sample(numbers,1))
 
 #tuple, non-modifiable ordered list
 product = ('Microsoft', 'XBOX', 499.99)
