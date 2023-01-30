@@ -1,5 +1,15 @@
 import numpy as np
+from scipy import stats
 
-new_matrix = np.array([[1, 2, 3],[4, 5, 6], [2, 3, 4]])
+speed = [99,86,87,88,111,86,103,87,94,78,77,85,86]
 
-print(new_matrix)
+x = np.mean(speed)
+print(x)
+x = np.median(speed)
+print(x)
+x = stats.mode(speed)
+print(x)
+x = np.std(speed)
+print(x)
+x = np.var(speed)
+print(x)
