@@ -1,3 +1,8 @@
+#Avi Raj Balam
+#Lab 1 - Question 2
+#13/02/2023
+#A program that converts temperature from celsius to fahrenheit
+
 c = float(input("Enter your temperature in celsius: "))
 # creating an input variable in float to obtain decimal place value of temperature in celsius
 

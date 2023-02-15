@@ -1,3 +1,8 @@
+#Avi Raj Balam
+#Lab 1 - Question 3
+#13/02/2023
+#A program that determines the fine price for going over the speed limit
+
 speed_limit = int(input("Enter the speed limit of area: "))
 # getting input of speed limit of the area
 clocked_speed = float(input("Enter the clocked speed of vehicle: "))
