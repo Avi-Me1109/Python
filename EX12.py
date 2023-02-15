@@ -12,7 +12,7 @@ elif((quantity >= 50) and (quantity <= 99)):
 
 elif((quantity >= 100)):
     discount = 0.4
-
+    
 else:
     discount = 0
 
