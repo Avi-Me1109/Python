@@ -35,23 +35,22 @@ def win (comp, person):
     if(comp == 1 and person == 3):
         winner = 1
 
-    elif(comp == 3 and person == 1):
+    if(comp == 3 and person == 1):
         winner = 2
 
-    elif(comp == 3 and person == 2):
+    if(comp == 3 and person == 2):
         winner = 1
 
-    elif(comp == 2 and person == 1):
+    if(comp == 2 and person == 1):
         winner = 2
 
-    elif(comp == 1 and person == 2):
+    if(comp == 1 and person == 2):
         winner = 1
 
-    elif(comp == 2 and person == 3):
+    if(comp == 2 and person == 3):
         winner = 2
-    
-    else:
-        winner = 0
+
+    return winner
 
 cont = True
 
@@ -62,23 +61,34 @@ while(cont == True):
 
     person, personvalue = peoplechoice(choice)
 
-    print(computer)
+    print("Computer has chose", computer)
 
     check = win(computervalue, personvalue)
 
     if(check == 1):
         print("Computer wins!")
+        urlife = int(input("Try again? (Enter Y or N): "))
+
+        if(urlife == "Y"):
+            cont = True
+
+        else:
+            cont = False
 
     if(check == 2):
         print("You win!")
+                
+        urlife = int(input("Try again? (Enter Y or N): "))
 
-    urlife = int(input("Enter 1 if you want to continue or 0 if you want to stop this madness: "))
+        if(urlife == "Y"):
+            cont = True
 
-    if(urlife == 1):
-        cont = True
+        else:
+            cont = False
 
     else:
-        cont = False
+        print("Nobody wins!")
+
 
 
 
