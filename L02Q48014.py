@@ -13,7 +13,13 @@ i = 0
 #counter
 
 while(i < count):
-    number = int(input("Enter a number: "))
+    number = float(input("Enter a number: "))
+
+    if (number == ""):
+        print("Incorrect Input")
+        print("Program Terminated")
+        break
+
     #Getting user input
     if(largest < number):
         largest = number

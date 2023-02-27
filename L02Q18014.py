@@ -19,7 +19,8 @@ sum = 0
 while(i < (day+1)):
     
     print(i, end="       ")
-    print("$", (salary/100), "\n")
+    print("$", end = "")
+    print(f"{(salary/100):,}")
     #printing day number and salary for each day
     sum = sum + salary
     #adding sum up from all salaries
@@ -31,5 +32,6 @@ while(i < (day+1)):
     #incrementing value
 
 
-print("Total salary: $", (sum/100))
+print("Total salary: $", end="")
+print(f"{(sum/100):,}")
 #printing final salary
