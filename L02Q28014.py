@@ -11,10 +11,11 @@ i = 1
 
 while ( i < years):
     
+    print("Year", i, ":" ,sem_fee)
     sem_fee = sem_fee * 1.03
     #increasing sem fee by 3% for every semester
     i = i + 1
     #increasing count
     
-print("Projected Sem Tuition: ", format(sem_fee, ".2f"))
+print("Projected Sem Tuition for year 5: ", format(sem_fee, ".2f"))
 #outputting sem tuition
