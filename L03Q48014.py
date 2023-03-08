@@ -1,7 +1,7 @@
 import random
 
 def check(value):
-    number = random.randint(1, 1001)
+    number = random.randint(1, 1000)
     check = False
 
     while(check == False):
