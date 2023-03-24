@@ -6,7 +6,7 @@ def roll(throws):
     
     for i in range(throws):
         lt.append(random.randint(1,6))
-        lt.sort
+        lt.sort()
 
     return lt
 
