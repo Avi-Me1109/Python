@@ -11,6 +11,6 @@ def roll(throws):
     return lt
 
 no_of_throws = int(input("Enter the number of throws: "))
-sorted_listed = roll(no_of_throws)
+sorteda = roll(no_of_throws)
 
-print(sorted_listed)
+print(sorteda)
