@@ -1,4 +1,4 @@
-user = input("Enter your Name (First, Middle, Last): ")
+user = input("Enter your Name (First, Middle, Last) or (First, Last): ")
 
 user = user.split()
 
