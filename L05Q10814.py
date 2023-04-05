@@ -24,8 +24,10 @@ spaces = space(user)
 # Adding 1 to the number of spaces to get the total number of words
 words = spaces+1
 
-# Removing spaces from the user input and converting it to uppercase
+# Removing spaces, full stops and commas from the user input and converting it to uppercase
 user = user.replace(" ", "")
+user = user.replace(".", "")
+user = user.replace(",", "")
 user = user.upper()
 
 # Initializing an empty dictionary to store character frequencies
