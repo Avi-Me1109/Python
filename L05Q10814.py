@@ -16,7 +16,7 @@ def space(word):
     return space_count
 
 # Asking the user to input a sentence and storing it in the variable 'user'
-user = input("Enter your sentence: ")
+user = input("Enter your sentence (Add a space after commas and fullstops): ")
 
 # Calling the 'space' function to count the number of spaces in the user input
 spaces = space(user)
