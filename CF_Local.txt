@@ -1,0 +1,2 @@
+Correlation of Beds vs Price:[[1.         0.39767612]
+ [0.39767612 1.        ]]

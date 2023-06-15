@@ -7,15 +7,22 @@ infile.close()
 i = 0
 total = 0
 
-num_calc = open("numbers.txt", 'r')
+# num_calc = open("numbers.txt", 'r')
 
-while(i < a):
-    num = int(num_calc.readline())
+# while(i < a):
+#     num = int(num_calc.readline())
 
-    total = total + num
+#     total = total + num
 
-    i = i+1
+#     i = i+1
 
-num_calc.close()
+# num_calc.close()
+
+num = open("numbers.txt", 'r')
+for lines in num:
+    number = int(num.readline())
+    total = total + number
+
+num.close()
 
 print("The total is: ", total)
